@@ -103,6 +103,18 @@ Avoid dashboard card overload.
 
 Tables are first-class components.
 
+Table density:
+
+* Tables in operational admin screens should be compact enough for scanning.
+* Header cells should use 12px vertical padding and 16px horizontal padding.
+* Body cells should use 8px vertical padding and 12px horizontal padding by default.
+* First and last table columns should keep clear edge padding; content must not sit flush against the table border.
+* In WordPress `wp-list-table`, use selectors specific enough to override core admin table padding when needed.
+* Use 12px vertical padding only when the row contains multi-line content or nested controls.
+* Avoid large empty vertical space inside table rows.
+* Do not use card-like blocks inside table cells unless the content needs clear grouping.
+* Long text previews should have a controlled max width and line length.
+
 Every table should support:
 
 * Search
